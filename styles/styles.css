@@ -42,16 +42,17 @@ a {
     width: 870px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 .logo img {
     width: 40px;
 }
 .logo h2 {
+    padding-left: 16px;
     font-size: 24px;
     color: #ffffff;
 }
@@ -69,6 +70,9 @@ a {
 }
 .menus img {
     width: 50px;
+}
+.menu-bar {
+    display: none;
 }
 
 /*----------------------------
@@ -215,6 +219,23 @@ Latest Courses Section
  Mobile Device 
  --------------------*/
 @media only screen and (max-width: 767px) {
+    .navbar {
+        width: 80%;
+    }
+    .logo img {
+        width: 20px;
+    }
+    .logo h2 {
+        font-size: 14px;
+    }
+    .menus {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+    }
     .container {
         width: 80%;
     }
@@ -243,6 +264,23 @@ Latest Courses Section
 Tablet Devices
 -------------------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        width: 80%;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .logo h2 {
+        font-size: 20px;
+    }
+    .menus {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+    }
     .container {
         width: 80%;
     }
