@@ -166,7 +166,7 @@ Latest Courses Section
 /* ------------------
  Mobile Device 
  --------------------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .container {
         width: 80%;
     }
@@ -177,6 +177,34 @@ Latest Courses Section
     .blogs,
     .courses {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+    .player-name {
+        margin: 0;
+    }
+    .courses {
+        row-gap: 24px;
+    }
+    .course {
+        width: auto;
+    }
+}
+/*--------------------
+Tablet Devices
+-------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+    hr {
+        width: 90%;
+    }
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
     }
     .player {
         flex-direction: column;
