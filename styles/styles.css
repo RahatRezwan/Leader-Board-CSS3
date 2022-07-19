@@ -2,6 +2,9 @@
  Common Styles or utilities
  ------------------------*/
 body {
+    margin: 0;
+    border: 0;
+    padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     background-color: #f3f1ff;
@@ -15,12 +18,57 @@ main {
     background-color: #ffffff;
     width: 870px;
     padding: 33px 30px 42px;
-    margin-top: 21px;
+    margin-top: 36px;
     border-radius: 5px;
 }
 hr {
     border: 1px solid #d1d1d1;
     width: 807px;
+}
+a {
+    text-decoration: none;
+}
+
+/*--------------------------
+ Navbar section
+ --------------------------  */
+.nav {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: #562eff;
+}
+.navbar {
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+}
+.logo h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+.menus ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    align-items: center;
+    column-gap: 36px;
+}
+.menus ul li p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+.menus img {
+    width: 50px;
 }
 
 /*----------------------------
