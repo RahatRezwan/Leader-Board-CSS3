@@ -6,12 +6,15 @@ body {
 }
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container {
     background-color: #ffffff;
     width: 870px;
     padding: 33px 30px 42px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 hr {
     border: 1px solid #d1d1d1;
@@ -52,7 +55,7 @@ hr {
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
+    row-gap: 25px;
 }
 .blog {
     display: flex;
@@ -65,15 +68,81 @@ hr {
 .blog-info {
     margin-left: 16px;
 }
-.blog-info h3 {
+.blog-title {
     font-size: 20px;
 }
-.blog-info p {
+.author-name {
     font-weight: 400;
     font-size: 16px;
     color: #9f9f9f;
 }
-.blog-info p a {
+.author-name a {
     color: #562eff;
     text-decoration: none;
+}
+
+/* Latest Courses Section */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course {
+    padding: 12px 14px;
+    width: 252px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+}
+.course-banner img {
+    width: 100%;
+}
+.course-name {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.mentor-name {
+    font-size: 14px;
+    color: #ed6b4f;
+    margin-top: 6px;
+}
+.Overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ratings {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-star {
+    font-size: 13px;
+    margin-right: 2px;
+}
+.fa-star.filled {
+    color: #ffc014;
+}
+.fa-star.empty {
+    color: #aeaeae;
+}
+.ratings .point {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #aeaeae;
+}
+.duration {
+    width: 94px;
+    height: 29px;
+    background-color: #ffe4e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff4a60;
+    border-radius: 14px;
+}
+.time {
+    margin-left: 5px;
+    font-size: 14px;
 }
